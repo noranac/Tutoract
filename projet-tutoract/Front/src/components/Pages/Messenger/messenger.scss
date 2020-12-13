@@ -1,0 +1,128 @@
+.messenger {
+  padding-top: 3.5em;
+  padding-bottom: 5rem;
+  width: 100%;
+  height: 100%;
+  &-container {
+    padding: 0 3em 0em 3em;
+  }
+  &-topic {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.2em;
+    text-transform: uppercase;
+    background-color: #343a40;
+    color: #ffc969;
+    border-radius: 10px;
+  }
+  &-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  &-input {
+    width: 30em;
+    height: 100%;
+    margin-left: 10em !important;
+    color: #fff !important;
+  }
+  &-button {
+    height: 100% !important;
+    border: none;
+  }
+  &-icon {
+      color: #b98222;
+      height: 100%;
+  }
+  &-chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  &-date {
+    background-color: #ffc969;
+    border-radius: 10px;
+  }
+  &-messages {
+    width: 70%;
+    height: 30em;
+    scroll-behavior: smooth;
+    margin-bottom: 1em;
+    background-color: #ffc969;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &-scroll {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: none;
+  }
+  &-message {
+    margin-bottom: 1rem;
+    padding: 0 1em;
+    text-align: left;
+    &-own {
+      text-align: right;
+      .messenger-message-single {
+        background-color: #343a40;;
+        color: white;
+        &::before {
+          right: 1em;
+          left: auto;
+          border: none;
+          border-bottom: 10px solid #343a40;
+          border-left: 10px solid transparent;
+        }
+      }
+    }
+    &-user {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    &-single {
+    animation: grow .3s cubic-bezier(.36,1.59,.89,1.1);
+    display: inline-block;
+    color: #fff;
+    background-color: lighten(#343a40, 10%);
+    padding: 1em;
+    border-radius: 1em;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 1em;
+      border-bottom: 10px solid lighten(#343a40, 10%);
+      border-right: 10px solid transparent;
+    }
+    }
+  }
+  &-profil {
+    background-color: #ffc969;
+    max-height: 20em;
+    border-radius: 10px;
+    width: 25%;
+  }
+  &-box {
+    height: 100%;
+    margin: 0em 3.5em 3.5em 3.5em;
+    position: relative;
+  }
+   &-title{
+    width: 30%;
+    font-size: 2em;
+    color: #343a40;
+    background-color: #ffc969;
+    left: 40%;
+    top: 0em;
+    border: none;
+    text-transform: uppercase;
+}
+&-description {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+}

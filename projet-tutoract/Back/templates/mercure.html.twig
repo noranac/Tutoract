@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<h1>Messages</h1>
+
+	{% block javascripts %}
+		<script>
+            let url = new URL('http://localhost:3000/.well-known/mercure')
+            url.searchParams.append('topic', 'messages-{{eventId}}')
+
+            const eventSource = new EventSource(url)
+            eventSource.onmessage = (evt) => {
+                const messageData = JSON.parse(evt.data)
+                console.log(messageData)
+                if (messageData.user.nickname) {
+                    document.querySelector('h1').insertAdjacentHTML('afterend', '<div id="test">' + messageData.user.nickname + ' : ' + messageData.content + '</div>')
+                } else {
+                    document.querySelector('h1').insertAdjacentHTML('afterend', '<div id="test">' + messageData.user.firstname + ' ' + messageData.user.lastname + ' : ' + messageData.content + '</div>')
+                }
+            }
+		</script>
+
+	{% endblock %}
+{% endblock %}

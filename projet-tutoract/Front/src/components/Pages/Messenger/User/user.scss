@@ -1,0 +1,39 @@
+.user {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &-tutor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: #343a40;
+      color: #ffc969;
+      border-radius: 10px;
+    }
+    &-avatar {
+      align-self: flex-start;
+    }
+    &-students {
+      align-self: center;
+      margin-top: 1em;
+      width: 80%;
+      color: #ffc969;
+      border-radius: 10px;
+    }
+    &-student {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 1em;
+      flex-direction: row;
+      width: 80%;
+      background-color: #343a40;
+      color: #ffc969;
+      border-radius: 10px;
+    }
+    &-name {
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+}

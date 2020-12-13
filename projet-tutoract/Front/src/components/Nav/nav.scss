@@ -1,0 +1,47 @@
+
+  .navigation {
+    position: relative;
+    width: auto;
+    padding: 3em;
+    text-align: right;
+
+  
+  &-item {
+     float: left;
+     text-transform: uppercase;
+   }
+  &-profile {
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 25px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  }
+   
+.avatar {
+    width: 75px !important;
+    height: 75px !important;
+  }
+.title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffc969 !important;
+}
+/*a:hover {
+  background: #92b329;
+}*/
+@media (max-width: 600px) {
+  .navigation {
+    &-avatar {
+      width: 75px !important;
+      height: 75px !important;
+    }
+  }
+  
+}

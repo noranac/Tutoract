@@ -1,0 +1,45 @@
+#signin-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em 2em;
+  width: 25em;
+  background-color: #fff;
+
+    &-title {
+      margin-bottom: 1.5em;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding-top: 2em;
+      color: #fff;
+      padding-top: 4.20em;
+      text-transform: uppercase;
+    }
+    &-button {
+      width: 35%;
+      align-self: flex-end;
+    }
+}
+#signin-container{
+  height: 100vh;
+  background-color: #58D6C5;
+}
+@media (max-width: 600px) {
+  #signin-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 2em;
+    width: 13em;
+    background-color: #fff;
+
+      &-button {
+        width: 100%;
+        align-self: inherit;
+      }
+  }
+}

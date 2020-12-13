@@ -1,0 +1,121 @@
+// css for the visitor page
+.main-visitor {
+  height: 100%;
+  background-color: #fac86b;
+  display: flex-wrap;
+
+
+  &-title {
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-size: 4em;
+    align-self: flex-start;
+    color: #fff;
+    font-weight: 750;
+  }
+  &-paragraph {
+    align-self: flex-start;
+    width: 55%;
+    line-height: 1.3em;
+    margin-top: 2.3em;
+    text-align: left;
+    font-size: 1.2em;
+  }
+  &-img {
+    width: 30%;
+    height: 30%;
+    margin-right: 6em;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-visitor {
+    height: 100%;
+    background-color: #fac86b;
+    display: flex-wrap;
+
+
+    &-title {
+      text-transform: uppercase;
+      font-size: 2em;
+      padding-top: 3em;
+      color: #fff;
+      font-weight: 750;
+      align-self: inherit;
+    }
+    &-paragraph {
+      width: 100%;
+      margin-top: 2.3em;
+      text-align: left;
+      font-size: 1.2em;
+      font-size: 0.8em;
+      align-self: inherit;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    &-img {
+      width: 50%;
+      height: 50%;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      align-self: inherit;
+    }
+  }
+}
+// css for logged user
+.main-logged {
+  background-color: #fac86b;
+  padding-bottom: 1em;
+  height: 100%;
+  &-img {
+    background-color: #fac86b;
+    width: 30%;
+    height: 30%;
+    margin-right: 6em;
+  }
+  &-paragraph {
+    text-transform: uppercase;
+    padding-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+    font-weight: 700;
+  }
+  &-homepage {
+    height: 100%;
+    width: 70%;
+  }
+  &-title {
+    font-size: 2em !important;
+    margin: 0 auto !important;
+  }
+  &-accordeon {
+    background-color: #343a40 !important;
+    color: #fff !important;
+    margin: 0 10em !important;
+    margin-bottom: 1em !important;
+  }
+  &-expansion {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+}
+// display for mobile
+@media (max-width: 600px) {
+  .main-logged {
+    &-img {
+    background-color: #fac86b;
+    width: 50%;
+    height: 50%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: inherit;
+  }
+    &-accordeon {
+      margin: 0 1em !important;
+      margin-bottom: 1em !important;
+    }
+  }
+}

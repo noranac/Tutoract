@@ -1,0 +1,64 @@
+#signUpForm {
+  background-color: #58D6C5; 
+  height: 100vh;
+  padding-top: 5em;
+  padding-bottom: 9em;
+}
+#formContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25em;
+  background-color: #fff;
+  padding: 2em;
+}
+#formTitle {
+  margin-bottom: 1.5em;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+#formParagraph {
+  text-align: left;
+  font-weight: 550;
+  margin-bottom: 1.2em
+}
+.formInput {
+  margin-bottom: 1.5em !important;
+  border-radius: 5px;
+}
+.radioCheckGroup {
+  display: flex !important;
+  flex-direction: row !important;
+  margin-bottom: 1em !important;
+}
+#formButton {
+  align-self: flex-end;
+  width: 35%;
+}
+@media (max-width: 600px) {
+  #signUpForm {
+    background-color: #58D6C5; 
+    height: 100%;
+    padding-top: 5em;
+    padding-bottom: 9em;
+  }
+  #formContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+    background-color: #fff;
+    padding: 1em;
+  }
+  #formButton {
+    align-self: inherit;
+    width: 100%;
+  }
+}
+
