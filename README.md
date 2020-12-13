@@ -4,7 +4,7 @@ Projet de fin de formation réalisé en janvier 2020.
 
 Site d'entraide à destination des élèves de la formation o'Clock.
 
-Principales fonctionnalités : formulaire d'inscription, formulaire de connexion, page d'accueil connecté, page de profil, messagerie.
+Principales fonctionnalités : formulaire d'inscription, formulaire de connexion, page d'accueil pour les élèves inscrits, page de profil, messagerie.
 
 Site réalisé avec React et Symfony.
 
